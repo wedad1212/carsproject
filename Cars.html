@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ar" lang="ar" dir="rtl">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> السيارات والحجز</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="myFunctions.js"></script>
+</head>
+<body>
+
+ 
+  <div class="site-header">
+    <div class="container header-inner">
+      <div class="brand">تأجير سيارات</div>
+      <div class="nav">
+        <a href="home.html">الرئيسية</a>
+        <a href="AboutUs.html">من نحن</a>
+        <a class="active" href="Cars.html">السيارات</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container section">
+    <div class="section-heading">
+      <div>
+        <h2>قائمة السيارات</h2>
+        <p>يمكنك عرض تفاصيل كل سيارة واختيار أكثر من سيارة. الأسعار بالليرة السورية الجديدة.</p>
+      </div>
+      <span class="pill">5 سيارات متاحة</span>
+    </div>
+
+    <div class="table-wrap">
+      <table class="cars-table">
+        <thead>
+          <tr>
+            <th>الصورة</th>
+            <th>الرمز</th>
+            <th>الموديل</th>
+            <th>سنة الصنع</th>
+            <th>السعر اليومي</th>
+            <th>إظهار التفاصيل</th>
+            <th>اختيار</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><img class="car-thumb" src="images/Nissan_Sunny.png" alt="Nissan Sunny" /></td>
+            <td>CR-001</td>
+            <td>Nissan Sunny</td>
+            <td>2023</td>
+            <td>2500 ل.س</td>
+            <td><label><input class="details-toggle" type="checkbox" data-target="details-1" /> عرض</label></td>
+            <td><label><input class="car-select" type="checkbox" value="CR-001" data-name="Nissan Sunny" data-price="2500" /> اختيار</label></td>
+          </tr>
+          <tr class="details-row" id="details-1">
+            <td colspan="7">
+              <div class="details-box">
+                <strong>Nissan Sunny</strong>
+                <span>الوقود: بنزين</span>
+                <span>ناقل الحركة: أوتوماتيك</span>
+                <span>المقاعد: 5</span>
+                <span>عداد الكيلومترات: 25,000 كم</span>
+                <span>اللون: فضي</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img class="car-thumb" src="images/Honda_CRV.png" alt="Honda CR-V" /></td>
+            <td>CR-002</td>
+            <td>Honda CR-V</td>
+            <td>2022</td>
+            <td>4000 ل.س</td>
+            <td><label><input class="details-toggle" type="checkbox" data-target="details-2" /> عرض</label></td>
+            <td><label><input class="car-select" type="checkbox" value="CR-002" data-name="Honda CR-V" data-price="4000" /> اختيار</label></td>
+          </tr>
+          <tr class="details-row" id="details-2">
+            <td colspan="7">
+              <div class="details-box">
+                <strong>Honda CR-V</strong>
+                <span>الوقود: بنزين</span>
+                <span>ناقل الحركة: أوتوماتيك</span>
+                <span>المقاعد: 5</span>
+                <span>عداد الكيلومترات: 31,000 كم</span>
+                <span>اللون: رمادي</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img class="car-thumb" src="images/Mazda_3.png" alt="Mazda 3" /></td>
+            <td>CR-003</td>
+            <td>Mazda 3</td>
+            <td>2024</td>
+            <td>3000 ل.س</td>
+            <td><label><input class="details-toggle" type="checkbox" data-target="details-3" /> عرض</label></td>
+            <td><label><input class="car-select" type="checkbox" value="CR-003" data-name="Mazda 3" data-price="3000" /> اختيار</label></td>
+          </tr>
+          <tr class="details-row" id="details-3">
+            <td colspan="7">
+              <div class="details-box">
+                <strong>Mazda 3</strong>
+                <span>الوقود: بنزين</span>
+                <span>ناقل الحركة: أوتوماتيك</span>
+                <span>المقاعد: 5</span>
+                <span>عداد الكيلومترات: 12,000 كم</span>
+                <span>اللون: أزرق</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img class="car-thumb" src="images/Suzuki_Swift.png" alt="Suzuki Swift" /></td>
+            <td>CR-004</td>
+            <td>Suzuki Swift</td>
+            <td>2021</td>
+            <td>1800 ل.س</td>
+            <td><label><input class="details-toggle" type="checkbox" data-target="details-4" /> عرض</label></td>
+            <td><label><input class="car-select" type="checkbox" value="CR-004" data-name="Suzuki Swift" data-price="1800" /> اختيار</label></td>
+          </tr>
+          <tr class="details-row" id="details-4">
+            <td colspan="7">
+              <div class="details-box">
+                <strong>Suzuki Swift</strong>
+                <span>الوقود: بنزين</span>
+                <span>ناقل الحركة: يدوي</span>
+                <span>المقاعد: 4</span>
+                <span>عداد الكيلومترات: 42,000 كم</span>
+                <span>اللون: أحمر</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img class="car-thumb" src="images/BMW_320i.png" alt="BMW 320i" /></td>
+            <td>CR-005</td>
+            <td>BMW 320i</td>
+            <td>2023</td>
+            <td>5500 ل.س</td>
+            <td><label><input class="details-toggle" type="checkbox" data-target="details-5" /> عرض</label></td>
+            <td><label><input class="car-select" type="checkbox" value="CR-005" data-name="BMW 320i" data-price="5500" /> اختيار</label></td>
+          </tr>
+          <tr class="details-row" id="details-5">
+            <td colspan="7">
+              <div class="details-box">
+                <strong>BMW 320i</strong>
+                <span>الوقود: بنزين</span>
+                <span>ناقل الحركة: أوتوماتيك</span>
+                <span>المقاعد: 5</span>
+                <span>عداد الكيلومترات: 18,000 كم</span>
+                <span>اللون: أسود</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    
+    <div class="continue-area">
+      <p id="selection-message">لم يتم اختيار أي سيارة بعد.</p>
+      <button class="button button-primary" id="continue-button" type="button">متابعة الحجز</button>
+    </div>
+
+   
+    <div id="booking-section" class="booking-card">
+      <div class="section-heading">
+        <div>
+          <h2>نموذج طلب الحجز</h2>
+          <p>الحقول المعلمة بنجمة (*) إلزامية.</p>
+        </div>
+        <span class="pill">معلومات الزبون</span>
+      </div>
+
+    
+      <form id="booking-form" action="#" method="post" novalidate="novalidate">
+        <fieldset>
+          <legend>المعلومات الشخصية</legend>
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="full-name">الاسم الكامل (أحرف عربية فقط)</label>
+              <input id="full-name" name="fullName" type="text" />
+            </div>
+
+            <div class="form-field">
+              <label for="national-id">الرقم الوطني *</label>
+              <input id="national-id" name="nationalId" type="text" maxlength="11" />
+            </div>
+
+            <div class="form-field">
+              <label for="mobile">رقم الموبايل</label>
+              <input id="mobile" name="mobile" type="tel" placeholder="09xxxxxxxx" />
+            </div>
+
+            <div class="form-field">
+              <label for="email">البريد الإلكتروني</label>
+              <input id="email" name="email" type="email" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>مدة التأجير</legend>
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="start-date">تاريخ البداية *</label>
+              <input id="start-date" name="startDate" type="text" placeholder="yyyy-mm-dd" />
+            </div>
+
+            <div class="form-field">
+              <label for="end-date">تاريخ النهاية *</label>
+              <input id="end-date" name="endDate" type="text" placeholder="yyyy-mm-dd" />
+            </div>
+          </div>
+        </fieldset>
+
+        <div id="form-error" class="message error-message"></div>
+
+        <button class="button button-primary" type="submit">إرسال طلب الحجز</button>
+      </form>
+
+      <div id="booking-result" class="result-card"></div>
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="container">مشروع تعليمي لتأجير السيارات</div>
+  </div>
+
+</body>
+</html>

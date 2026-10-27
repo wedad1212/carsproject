@@ -1,0 +1,459 @@
+/* الخطوط: نحدد الخط مرة واحدة فقط من هنا */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/* نوع الخط وحجمه ولون النص العام (مكان واحد لكل الصفحات) */
+body {
+  margin: 0;
+  background: #0e1520;
+  color: #dfe6ee;
+  font-family: 'Cairo', Tahoma, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* حقول الإدخال والأزرار ترث نفس الخط من body */
+input,
+button {
+  font: inherit;
+}
+
+a {
+  color: #f2b84b;
+  text-decoration: none;
+}
+
+.container {
+  width: 92%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* ========== رأس الصفحة ========== */
+.site-header {
+  background: #151f2d;
+  border-bottom: 1px solid #26364a;
+}
+
+.header-inner {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  color: #f2b84b;
+  font-size: 28px;
+  font-weight: 800;
+  direction: ltr;
+}
+
+.nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: #dfe6ee;
+  background: #1d2a3b;
+  border: 1px solid #2c3d52;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.nav a:hover {
+  background: #2c3d52;
+}
+
+.nav a.active {
+  background: #f2b84b;
+  color: #10151d;
+  border-color: #f2b84b;
+}
+
+/* ========== القسم الرئيسي في الصفحة الأولى ========== */
+.hero {
+  background: linear-gradient(120deg, #101a28, #1d3a5f);
+  padding: 70px 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #26364a;
+}
+
+.hero h1 {
+  font-size: 46px;
+  line-height: 1.4;
+  margin: 0 0 12px;
+  color: #FFFFFF;
+}
+
+.hero-text {
+  color: #b7c6d8;
+  font-size: 19px;
+  max-width: 520px;
+  margin: 0 0 26px;
+}
+
+/* ========== الأزرار ========== */
+.button {
+  border: 0;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 11px 26px;
+  font-weight: 800;
+  transition: 0.2s;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(242, 184, 75, 0.35);
+}
+
+.button-primary {
+  background: #f2b84b;
+  color: #10151d;
+}
+
+/* ========== العناوين والأقسام ========== */
+.section {
+  padding-top: 25px;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-size: 26px;
+  line-height: 1.4;
+  margin: 0 0 18px;
+  padding-right: 12px;
+  border-right: 4px solid #f2b84b;
+}
+
+h3 {
+  color: #f2b84b;
+  margin: 8px 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.section-heading h2 {
+  margin-bottom: 3px;
+}
+
+.section-heading p {
+  margin: 0;
+  color: #8c99a8;
+}
+
+.pill {
+  display: inline-block;
+  border-radius: 30px;
+  background: #3a2f14;
+  border: 1px solid #6b5420;
+  color: #f2b84b;
+  padding: 4px 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ========== البطاقات ========== */
+.info-panel,
+.contact-card,
+.about-main,
+.booking-card {
+  background: #162030;
+  border: 1px solid #26364a;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.info-panel {
+  margin-bottom: 50px;
+}
+
+.notes {
+  color: #b7c6d8;
+}
+
+.supervisor {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #26364a;
+  color: #f2b84b;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ========== الجداول ========== */
+.simple-table,
+.cars-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #162030;
+}
+
+.simple-table th,
+.simple-table td {
+  padding: 13px 15px;
+  text-align: right;
+  border-bottom: 1px solid #26364a;
+}
+
+th {
+  color: #10151d;
+  background: #f2b84b;
+  font-weight: 800;
+}
+
+/* ========== صفحة من نحن ========== */
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 22px;
+  align-items: start;
+  margin-bottom: 30px;
+}
+
+.about-main p,
+.contact-card p {
+  color: #b7c6d8;
+}
+
+.contact-card p {
+  margin: 10px 0;
+}
+
+/* ========== جدول السيارات ========== */
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 14px;
+  border: 1px solid #26364a;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.cars-table {
+  min-width: 950px;
+}
+
+.cars-table th,
+.cars-table td {
+  padding: 13px 12px;
+  text-align: center;
+  border-bottom: 1px solid #26364a;
+}
+
+.cars-table tbody tr:hover {
+  background: #1c2b40;
+}
+
+.cars-table label {
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  accent-color: #f2b84b;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.car-thumb {
+  width: 100px;
+  height: 58px;
+  object-fit: contain;
+}
+
+/* صفوف التفاصيل مخفية في البداية */
+.details-row {
+  display: none;
+  background: #1a2a40;
+}
+
+.details-row td {
+  text-align: right;
+}
+
+.details-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 22px;
+  padding: 8px 10px;
+  color: #b7c6d8;
+}
+
+.details-box strong {
+  color: #f2b84b;
+}
+
+/* ========== منطقة المتابعة ========== */
+.continue-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 22px 0 35px;
+  padding: 18px 22px;
+  background: #162030;
+  border: 1px solid #26364a;
+  border-radius: 14px;
+}
+
+.continue-area p {
+  margin: 0;
+  color: #b7c6d8;
+}
+
+/* ========== نموذج الحجز (مخفي في البداية) ========== */
+.booking-card {
+  display: none;
+  margin: 25px 0 45px;
+}
+
+fieldset {
+  border: 1px solid #2c3d52;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 20px 0;
+}
+
+legend {
+  color: #f2b84b;
+  padding: 0 9px;
+  font-weight: 800;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-field label {
+  color: #dfe6ee;
+  font-weight: 700;
+}
+
+/* تنسيق جميع حقول الإدخال النصية من مكان واحد (اللون والإطار) */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  border: 1px solid #33475f;
+  border-radius: 8px;
+  background: #0e1520;
+  color: #FFFFFF;
+  padding: 10px 13px;
+  direction: rtl;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  outline: none;
+  border-color: #f2b84b;
+  box-shadow: 0 0 0 3px rgba(242, 184, 75, 0.2);
+}
+
+::placeholder {
+  color: #6f7e90;
+}
+
+/* ========== الرسائل والنتيجة (مخفية في البداية) ========== */
+.message {
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.error-message {
+  display: none;
+  color: #ffb4b4;
+  background: #3a1d22;
+  border: 1px solid #7a3038;
+}
+
+.result-card {
+  display: none;
+  background: #14261f;
+  border: 1px solid #2b5a43;
+  border-radius: 14px;
+  padding: 22px;
+  margin-top: 24px;
+}
+
+.result-card ul {
+  padding-right: 24px;
+}
+
+.result-card li {
+  margin-bottom: 8px;
+}
+
+.final-total {
+  background: #1f4a35;
+  border-radius: 10px;
+  color: #9df0c0;
+  padding: 12px 15px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* ========== أسفل الصفحة ========== */
+.site-footer {
+  background: #0a1019;
+  color: #8c99a8;
+  padding: 22px 0;
+  font-size: 14px;
+  text-align: center;
+  border-top: 1px solid #26364a;
+}
+
+/* ========== الشاشات الصغيرة (الموبايل) ========== */
+@media (max-width: 700px) {
+  .header-inner {
+    flex-direction: column;
+    padding: 12px 0;
+  }
+
+  .about-layout,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .continue-area {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+}
